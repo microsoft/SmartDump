@@ -35,6 +35,27 @@ Examples:
         - Capture a dump based on specified address of breakpoint:
                 SmartDump.exe -d 1 -p 4567 -a 7a64e9d0 -n 1
 
+1) Show options and examples
+
+![image](https://user-images.githubusercontent.com/32285008/119694737-16a5fb80-be80-11eb-883b-ea2b48b2221f.png)
+
+2) Monitor and display exceptions
+
+![image](https://user-images.githubusercontent.com/32285008/119694993-566ce300-be80-11eb-8e5e-6b787d160d0f.png)
+
+3) Capture a manual dump
+
+![image](https://user-images.githubusercontent.com/32285008/119695109-72708480-be80-11eb-9adb-184e47cdc453.png)
+
+4) Capture two exception dumps based on filter string
+
+![image](https://user-images.githubusercontent.com/32285008/119695216-8c11cc00-be80-11eb-89a0-ab47c97499ac.png)
+
+5) Capture dump based on specified address of breakpoint
+
+![image](https://user-images.githubusercontent.com/32285008/119695379-aea3e500-be80-11eb-94f8-696b034b544e.png)
+![image](https://user-images.githubusercontent.com/32285008/119695397-b2376c00-be80-11eb-88d0-bbc0ca2d9252.png)
+
 
 # Project
 
