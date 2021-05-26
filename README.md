@@ -1,3 +1,35 @@
+# Usage
+
+SmartDump v0.95 x64 alpha - memory dump capture utility
+Copyright (C) 2021-2031 WenJun Zhang
+Microsoft Azure Integration
+
+Options:
+ -p     PID of target process.
+ -ma    Manual full memory dump.
+ -d     Collect number of dumps.
+ -n     Number of exceptions to be captured.
+ -f     Filter exception based on specified string.
+ -a     Address of breakpoint.
+ -o     Output path of dump(s).
+ -h     Or -?/-help. Display usage and examples.
+
+Examples:
+------------------------------------------
+
+        - Write a manual dump against process with id 4567:
+                SmartDump.exe -ma -p 4567
+
+        - Monitor and print 10 managed exceptions against process with id 4567:
+                SmartDump.exe -p 4567 -n 10
+
+        - Capture two dumps based on filtered managed exception:
+                SmartDump.exe -p 4567 -f "Object reference not set" -n 10 -d 2
+
+        - Capture a dump based on specified address of breakpoint:
+                SmartDump.exe -d 1 -p 4567 -a 7a64e9d0 -n 1
+
+
 # Project
 
 > This repo has been populated by an initial template to help get you started. Please
