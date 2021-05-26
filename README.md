@@ -1,8 +1,6 @@
-# Usage
+# Usage:
 
 SmartDump v0.95 x64 alpha - memory dump capture utility
-Copyright (C) 2021-2031 WenJun Zhang
-Microsoft Azure Integration
 
 Options:
 
