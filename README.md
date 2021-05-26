@@ -5,14 +5,22 @@ Copyright (C) 2021-2031 WenJun Zhang
 Microsoft Azure Integration
 
 Options:
- -p     PID of target process.
- -ma    Manual full memory dump.
- -d     Collect number of dumps.
- -n     Number of exceptions to be captured.
- -f     Filter exception based on specified string.
- -a     Address of breakpoint.
- -o     Output path of dump(s).
- -h     Or -?/-help. Display usage and examples.
+
+        -p     PID of target process.
+
+        -ma    Manual full memory dump.
+
+        -d     Collect number of dumps.
+
+        -n     Number of exceptions to be captured.
+
+        -f     Filter exception based on specified string.
+
+        -a     Address of breakpoint.
+
+        -o     Output path of dump(s).
+
+        -h     Or -?/-help. Display usage and examples.
 
 Examples:
 ------------------------------------------
