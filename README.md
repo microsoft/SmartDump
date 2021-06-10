@@ -4,23 +4,23 @@ SmartDump v0.99 x86/x64 alpha - memory dump capture utility
 
 **Options:**
 
-  -p      PID of target process.
+    -p      PID of target process.
  
-  -ma     Manual full memory dump.
+    -ma     Manual full memory dump.
  
-  -d      Collect number of dumps.
+    -d      Collect number of dumps.
  
-  -n      Number of exceptions to be captured. Default is 5. Set to 0 means unlimited.
+    -n      Number of exceptions to be captured. Default is 5. Set to 0 means unlimited.
  
-  -f      Filter exception based on specified string.
+    -f      Filter exception based on specified string.
  
-  -fv     Exclude exceptions contain specified filter. Use '|' as delimiter for multiple strings.
+    -fv     Exclude exceptions contain specified filter. Use '|' as delimiter for multiple strings.
  
-  -a      Address of breakpoint.
+    -a      Address of breakpoint.
  
-  -o      Output path of dump(s).
+    -o      Output path of dump(s).
  
-  -h      Or -?/-help. Display usage and examples.
+    -h      Or -?/-help. Display usage and examples.
 
 Examples:
 ------------------------------------------
