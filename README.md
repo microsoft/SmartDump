@@ -48,7 +48,7 @@ The following are several sample commands that uses the tool with Kudu debug con
 
 2) Monitor and display exceptions
 
-![image](https://user-images.githubusercontent.com/32285008/119694993-566ce300-be80-11eb-8e5e-6b787d160d0f.png)
+![image](https://user-images.githubusercontent.com/32285008/121565037-a934c600-ca4e-11eb-9f3d-f287933ed944.png)
 
 3) Capture a manual dump
 
