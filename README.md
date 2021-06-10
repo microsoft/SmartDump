@@ -58,14 +58,14 @@ The following are several sample commands that uses the tool with Kudu debug con
 
 ![image](https://user-images.githubusercontent.com/32285008/121566060-b56d5300-ca4f-11eb-8ff3-5caca299f0b8.png)
 
-5) Capture dump based on specified address of breakpoint
+5) Exclude/filter uninterested exceptions based on specified strings delimited with '|'
+
+![image](https://user-images.githubusercontent.com/32285008/121568609-7391dc00-ca52-11eb-83d6-696c973e4a06.png)
+
+6) Collect dump based on specified address of breakpoint
 
 ![image](https://user-images.githubusercontent.com/32285008/121567772-8bb52b80-ca51-11eb-8287-916f24678d40.png)
 ![image](https://user-images.githubusercontent.com/32285008/121567944-b7d0ac80-ca51-11eb-9540-cad30f0fa081.png)
-
-6) Exclude/filter uninterested exceptions based on specified strings delimited with '|'
-
-![image](https://user-images.githubusercontent.com/32285008/121568609-7391dc00-ca52-11eb-83d6-696c973e4a06.png)
 
 7) Capture against process of onpromise environment
 
