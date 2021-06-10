@@ -56,7 +56,7 @@ The following are several sample commands that uses the tool with Kudu debug con
 
 4) Capture two exception dumps based on filter string
 
-![image](https://user-images.githubusercontent.com/32285008/119695216-8c11cc00-be80-11eb-89a0-ab47c97499ac.png)
+![image](https://user-images.githubusercontent.com/32285008/121566060-b56d5300-ca4f-11eb-8ff3-5caca299f0b8.png)
 
 5) Capture dump based on specified address of breakpoint
 
