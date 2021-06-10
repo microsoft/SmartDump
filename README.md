@@ -1,24 +1,18 @@
 # Usage:
 
-SmartDump v0.95 x64 alpha - memory dump capture utility
+SmartDump v0.99 x86/x64 alpha - memory dump capture utility
 
 Options:
 
-        -p     PID of target process.
-
-        -ma    Manual full memory dump.
-
-        -d     Collect number of dumps.
-
-        -n     Number of exceptions to be captured.
-
-        -f     Filter exception based on specified string.
-
-        -a     Address of breakpoint.
-
-        -o     Output path of dump(s).
-
-        -h     Or -?/-help. Display usage and examples.
+ -p     PID of target process.
+ -ma    Manual full memory dump.
+ -d     Collect number of dumps.
+ -n     Number of exceptions to be captured. Default is 5. Set to 0 means unlimited.
+ -f     Filter exception based on specified string.
+ -fv    Exclude exceptions contain specified filter. Use '|' as delimiter for multiple strings.
+ -a     Address of breakpoint.
+ -o     Output path of dump(s).
+ -h     Or -?/-help. Display usage and examples.
 
 Examples:
 ------------------------------------------
@@ -31,6 +25,9 @@ Examples:
 
         - Capture two dumps based on filtered managed exception:
                 SmartDump.exe -p 4567 -f "Object reference not set" -n 10 -d 2
+
+        - Exclude exceptions contain specified filter string from output:
+                SmartDump.exe -p 4567 -n 10 -fv "InvalidOperationException|FileNotFoundException"
 
         - Capture a dump based on specified address of breakpoint:
                 SmartDump.exe -d 1 -p 4567 -a 7a64e9d0 -n 1
