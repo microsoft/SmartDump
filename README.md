@@ -52,7 +52,7 @@ The following are several sample commands that uses the tool with Kudu debug con
 
 3) Capture a manual dump
 
-![image](https://user-images.githubusercontent.com/32285008/119695109-72708480-be80-11eb-9adb-184e47cdc453.png)
+![image](https://user-images.githubusercontent.com/32285008/121565536-19434c00-ca4f-11eb-9312-e4e8f6086c4b.png)
 
 4) Capture two exception dumps based on filter string
 
