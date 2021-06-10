@@ -44,7 +44,7 @@ The following are several sample commands that uses the tool with Kudu debug con
 
 1) Show options and examples
 
-![image](https://user-images.githubusercontent.com/32285008/119694737-16a5fb80-be80-11eb-883b-ea2b48b2221f.png)
+![image](https://user-images.githubusercontent.com/32285008/121564667-4b07e300-ca4e-11eb-9b7a-ed1ec223ebb5.png)
 
 2) Monitor and display exceptions
 
