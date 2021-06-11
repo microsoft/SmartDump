@@ -1,6 +1,6 @@
 # Usage:
 
-SmartDump v0.99 x86/x64 alpha - memory dump capture utility
+SmartDump v0.99 x86/x64 alpha - exception and memory dump capture utility
 
 **Options:**
 
