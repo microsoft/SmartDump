@@ -8,7 +8,6 @@ SmartDump is a fexible command line utility to capture exception logs and memory
     4. For intermittent issues, capturing iDNA Trace(TTT/TTD) may not be a suitable approach even with selective recording. 
 
 Currently SmartDump is still under a pre-release build. New features are continuously being added. 
-
 Bug reports, suggestions and feedback from you will be very much appreciated.
 
 # Usage:
