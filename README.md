@@ -1,3 +1,15 @@
+**Introduction**
+
+SmartDump is a fexible command line utility to capture exception logs and memory dump files against a target process based on user specified settings like filter strings or memory addresses of breakpoints. This tool also focuses on addressing several scenarios that we cannot utilize some well-known and most widely used debugging tools, for example:
+
+1. iDNA Trace(TTT/TTD) cannot be used with Kudu console or RDP for Azure AppService related debugging.
+2. Debug Diagnostic Tool(DebugDiag) cannot be installed and used for Kudu console or RDP as well.
+3. Procdump works with Kudu and RDP but isn't able to capture managed exceptions against web hosts with .Net Core runtime.
+4. For intermittent issues, capturing iDNA Trace(TTT/TTD) may not be a suitable approach even with selective recording. 
+
+Currently SmartDump is still under a pre-release build. New features are continuously being added. 
+Bug reports, suggestions and feedback from you will be very much appreciated.
+
 # Usage:
 
 SmartDump v0.99 x86/x64 alpha - exception and memory dump capture utility
