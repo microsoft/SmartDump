@@ -12,7 +12,7 @@ SmartDump v0.99 x86/x64 alpha - memory dump capture utility
  
     -n      Number of exceptions to be captured. Default is 5. Set to 0 means unlimited.
  
-    -f      Filter exception based on specified string.
+    -f      Filter exception based on specified string(s). Use '|' as delimiter for multiple strings.
  
     -fv     Exclude exceptions contain specified filter. Use '|' as delimiter for multiple strings.
  
@@ -31,8 +31,8 @@ Examples:
         - Monitor and print 10 managed exceptions against process with id 4567:
                 SmartDump.exe -p 4567 -n 10
 
-        - Capture two dumps based on filtered managed exception:
-                SmartDump.exe -p 4567 -f "Object reference not set" -n 10 -d 2
+        - Capture two dumps based on filtered strings of managed exceptions:
+                SmartDump.exe -p 4567 -f "Object reference not set|ArgumentException" -n 10 -d 2
 
         - Exclude exceptions contain specified filter string from output:
                 SmartDump.exe -p 4567 -n 10 -fv "InvalidOperationException|FileNotFoundException"
