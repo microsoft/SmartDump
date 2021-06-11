@@ -1,4 +1,4 @@
-***Introduction:***
+# Introduction:
 
 SmartDump is a fexible command line utility to capture exception logs and memory dump files against a target process based on user specified settings like filter strings or memory addresses of breakpoints. This tool also focuses on addressing several scenarios that we cannot utilize some well-known and most widely used debugging tools, for example:
 
