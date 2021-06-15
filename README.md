@@ -1,6 +1,6 @@
 # Introduction:
 
-SmartDump is a fexible command line utility to capture exception logs and memory dump files against a target process based on user specified settings like filter strings or memory addresses of breakpoints. This tool also focuses on addressing several scenarios that we cannot utilize some well-known and most widely used debugging tools, for example:
+SmartDump is a flexible command line utility to capture exception logs and memory dump files against a target process based on user specified settings like filter strings or memory addresses of breakpoints. This tool also focuses on addressing several scenarios that we cannot utilize some well-known and most widely used debugging tools, for example:
 
     1. iDNA Trace(TTT/TTD) cannot be used with Kudu console or RDP for Azure AppService related debugging.
     2. Debug Diagnostic Tool(DebugDiag) cannot be installed and used for Kudu console or RDP as well.
