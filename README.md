@@ -76,8 +76,7 @@ The following are several sample commands that uses the tool with Kudu debug con
 
 6) Collect dump based on specified address of breakpoint
 
-![image](https://user-images.githubusercontent.com/32285008/121567772-8bb52b80-ca51-11eb-8287-916f24678d40.png)
-![image](https://user-images.githubusercontent.com/32285008/121567944-b7d0ac80-ca51-11eb-9540-cad30f0fa081.png)
+![image](https://user-images.githubusercontent.com/32285008/122042223-769f1a80-ce0c-11eb-9529-8c5ca17c6b02.png)
 
 7) Capture against process of onpromise environment
 
