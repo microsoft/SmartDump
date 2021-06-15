@@ -12,7 +12,7 @@ Bug reports, suggestions and feedback from you will be very much appreciated.
 
 # Usage:
 
-SmartDump v0.99 x86/x64 alpha - exception and memory dump capture utility
+SmartDump v1.00 x86/x64 beta - exception and memory dump capture utility
 
 **Options:**
 
