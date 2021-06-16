@@ -23,6 +23,8 @@ SmartDump v1.00 x86/x64 beta - exception and memory dump capture utility
     -d      Collect number of dumps.
  
     -n      Number of exceptions to be captured. Default is 5. Set to 0 means unlimited.
+    
+    -s      Skip the first number of exceptions for dump capture. This option is useful when initial exceptions cannot reflect an actual issue.
  
     -f      Filter exception based on specified string(s). Use '|' as delimiter for multiple strings.
  
@@ -48,6 +50,9 @@ Examples:
 
         - Exclude exceptions contain specified filter string from output:
                 SmartDump.exe -p 4567 -n 10 -fv "InvalidOperationException|FileNotFoundException"
+                
+        - Skip the first 3 NullReferenceException. Capture a memory dump for the 4th one and specify output path to: c:\home\dump.
+                SmartDump.exe -p 4567 -n 10 -f "NullReferenceException" -s 3 -d 1 -o c:\home\dump
 
         - Capture a dump based on specified address of breakpoint:
                 SmartDump.exe -d 1 -p 4567 -a 7a64e9d0 -n 1
