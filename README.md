@@ -71,7 +71,7 @@ The following are several sample commands that uses the tool with Kudu debug con
 
 ![image](https://user-images.githubusercontent.com/32285008/121565536-19434c00-ca4f-11eb-9312-e4e8f6086c4b.png)
 
-4) Capture two exception dumps based on filter string
+4) Capture two exception dumps based on filter string.
 
 ![image](https://user-images.githubusercontent.com/32285008/121566060-b56d5300-ca4f-11eb-8ff3-5caca299f0b8.png)
 
@@ -79,16 +79,20 @@ The following are several sample commands that uses the tool with Kudu debug con
 
 ![image](https://user-images.githubusercontent.com/32285008/121568609-7391dc00-ca52-11eb-83d6-696c973e4a06.png)
 
-6) Collect dump based on specified address of breakpoint
+6) Collect dump based on specified address of breakpoint.
 
 ![image](https://user-images.githubusercontent.com/32285008/122042223-769f1a80-ce0c-11eb-9529-8c5ca17c6b02.png)
 
-7) Use SmartDump to write a log of exceptions for your site.
+7) Skip the first 3 SqlException. Capture two memory dumps for the 4th and 5th ones and specify output path to: c:\home\dump.
+
+![image](https://user-images.githubusercontent.com/32285008/122184337-b32b4e80-cebe-11eb-88f5-cf91a546e8c5.png)
+
+8) Use SmartDump to write a log of exceptions for your site.
 
 ![image](https://user-images.githubusercontent.com/32285008/122149025-fd480c00-ce8d-11eb-8ae9-650f4367ecf3.png)
 ![image](https://user-images.githubusercontent.com/32285008/122149126-28326000-ce8e-11eb-9b6a-cee89a2d77bd.png)
 
-8) Capture against process of onpromise environment
+9) Capture against process of onpromise environment
 
 ![image](https://user-images.githubusercontent.com/32285008/121570281-4f36ff00-ca54-11eb-8089-df7fb2e14924.png)
 
