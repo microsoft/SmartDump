@@ -26,7 +26,7 @@ SmartDump v1.01 x86/x64 beta - exception and memory dump capture utility
     
     -s      Skip the first number of exceptions for dump capture. This option is useful when initial exceptions cannot reflect an actual issue.
  
-    -f      Filter exception based on specified string(s). Use '|' as delimiter for multiple strings.
+    -f      Filter(include) exception based on specified string(s). Use '|' as delimiter for multiple strings.
  
     -fv     Exclude exceptions contain specified filter. Use '|' as delimiter for multiple strings.
  
