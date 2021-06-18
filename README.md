@@ -131,8 +131,8 @@ Below is a detailed step-to-step demo.
 
 5.	To generate dump, use -d option to set number of dumps to be captured. Associating it with -f(filter include) and -fv (filter exclude) options allow you to capture dumps against specific exceptions.
 
-- -f      Filter exception based on specified string(s). Use '|' as delimiter for multiple strings.
-- -fv     Exclude exceptions contain specified filter. Use '|' as delimiter for multiple strings.
+   - -f      Filter exception based on specified string(s). Use '|' as delimiter for multiple strings.
+   - -fv     Exclude exceptions contain specified filter. Use '|' as delimiter for multiple strings.
 
  ![SD06](https://user-images.githubusercontent.com/32285008/122496003-a1ac8880-d01d-11eb-80be-ba1ca557b5e7.gif)
 
