@@ -20,10 +20,13 @@ Below is a detailed step-to-step demo.
  ![SD01](https://user-images.githubusercontent.com/32285008/122495908-775acb00-d01d-11eb-8e95-7c1bbef34290.gif)
 
 
+
 2.	Next, we need to find the PID of our LogicApp site’s w3wp.exe from Process Explorer. 
+    
     NOTE: the one with (scm) is for Kudu console. Hence we always have to focus on w3wp.exe without (scm).
 
 ![SD02](https://user-images.githubusercontent.com/32285008/122495932-7e81d900-d01d-11eb-8bda-68c05beadb8f.gif)
+
 
 
 3.	Then we can run SmartDump.exe and use -p option to specify the PID found in step #2.
@@ -31,17 +34,20 @@ Below is a detailed step-to-step demo.
 
  ![SD03](https://user-images.githubusercontent.com/32285008/122495954-893c6e00-d01d-11eb-8701-4c90cb879242.gif)
 
-    After invoke LogicApp and generate some exceptions, SmartDump will be able to capture them within the console.
+   After invoke LogicApp and generate some exceptions, SmartDump will be able to capture them within the console.
 
  ![SD04](https://user-images.githubusercontent.com/32285008/122495968-8e99b880-d01d-11eb-8758-6fbcc3a0b7e3.gif)
 
 
+
 4.	If you want to see more exceptions, just use -n option to specify number of exceptions to be captured.
+    
     NOTE: using -n 0 to start an unlimited/endless capture. However please be careful to use this in Kudu because it doesn’t support Ctrl+C to exit a process. Run inside a common cmd.exe without such issue.
 
     Tips: you can also add:  > filename.log  at the end of a command to make Kudu write output into a log file for you.
 
  ![SD05](https://user-images.githubusercontent.com/32285008/122495986-98bbb700-d01d-11eb-93d7-e2b65da75b0d.gif)
+
 
 
 5.	To generate dump, use -d option to set number of dumps to be captured. Associating it with -f(filter include) and -fv (filter exclude) options allow you to capture dumps against specific exceptions.
@@ -52,6 +58,7 @@ Below is a detailed step-to-step demo.
  ![SD06](https://user-images.githubusercontent.com/32285008/122496003-a1ac8880-d01d-11eb-80be-ba1ca557b5e7.gif)
 
 
+
 6.	The tool also supports to set memory address of breakpoint to generate dump files.
 
     You can capture a dump first and then open it in debugger to find the code entry address of a function you interest in(or code address of any line).
@@ -59,6 +66,8 @@ Below is a detailed step-to-step demo.
 
 ![SD07](https://user-images.githubusercontent.com/32285008/122496017-a96c2d00-d01d-11eb-9195-420c959c6ec8.gif)
 ![SD08](https://user-images.githubusercontent.com/32285008/122496030-af620e00-d01d-11eb-8901-2fdda0c46d20.gif)
+
+
 
 
 # Usage:
