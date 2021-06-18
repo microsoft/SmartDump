@@ -30,6 +30,7 @@ Below is a detailed step-to-step demo.
 
 
 3.	Then we can run SmartDump.exe and use -p option to specify the PID found in step #2.
+
     This makes SmartDump attach to the target process and start to monitor any exception thrown in it. By default, the tool captures 5 exceptions.
 
  ![SD03](https://user-images.githubusercontent.com/32285008/122495954-893c6e00-d01d-11eb-8701-4c90cb879242.gif)
