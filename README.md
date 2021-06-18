@@ -98,9 +98,12 @@ The following are several sample commands that uses the tool with Kudu debug con
 
 # How to Use:
 
+Below is a detailed demo.
+
 1.	First of all, we need to open Kudu console and drag/upload the tool into the site folder.
 
  ![SD01](https://user-images.githubusercontent.com/32285008/122495908-775acb00-d01d-11eb-8e95-7c1bbef34290.gif)
+
 
 2.	Next, we need to find the PID of our LogicApp site’s w3wp.exe from Process Explorer. 
 NOTE: the one with (scm) is for Kudu console. Hence we always have to focus on w3wp.exe without (scm).
@@ -119,14 +122,14 @@ After invoke LogicApp and generate some exceptions, SmartDump will be able to ca
 4.	If you want to see more exceptions, just use -n option to specify number of exceptions to be captured.
 NOTE: using -n 0 to start an unlimited/endless capture. However please be careful to use this in Kudu because it doesn’t support Ctrl+C to exit a process. Run inside a common cmd.exe without such issue.
 
-Tips: you can also add:  > filename.log  at the end of a command to make Kudu write output into a log file for you.
+ Tips: you can also add:  > filename.log  at the end of a command to make Kudu write output into a log file for you.
 
  ![SD05](https://user-images.githubusercontent.com/32285008/122495986-98bbb700-d01d-11eb-93d7-e2b65da75b0d.gif)
 
 5.	To generate dump, use -d option to set number of dumps to be captured. Associating it with -f(filter include) and -fv (filter exclude) options allow you to capture dumps against specific exceptions.
 
--f      Filter exception based on specified string(s). Use '|' as delimiter for multiple strings.
--fv     Exclude exceptions contain specified filter. Use '|' as delimiter for multiple strings.
+ -f      Filter exception based on specified string(s). Use '|' as delimiter for multiple strings.
+ -fv     Exclude exceptions contain specified filter. Use '|' as delimiter for multiple strings.
 
  ![SD06](https://user-images.githubusercontent.com/32285008/122496003-a1ac8880-d01d-11eb-80be-ba1ca557b5e7.gif)
 
