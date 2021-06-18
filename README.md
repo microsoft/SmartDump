@@ -97,6 +97,7 @@ SmartDump v1.02 x86/x64 beta - exception and memory dump capture utility
  
     -h      Or -?/-help. Display usage and examples.
 
+
 Examples:
 ------------------------------------------
 
