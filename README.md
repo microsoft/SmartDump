@@ -46,13 +46,14 @@ Below is a detailed step-to-step demo.
 
 5.	To generate dump, use -d option to set number of dumps to be captured. Associating it with -f(filter include) and -fv (filter exclude) options allow you to capture dumps against specific exceptions.
 
-   - -f      Filter exception based on specified string(s). Use '|' as delimiter for multiple strings.
-   - -fv     Exclude exceptions contain specified filter. Use '|' as delimiter for multiple strings.
+       - -f      Filter exception based on specified string(s). Use '|' as delimiter for multiple strings.
+       - -fv     Exclude exceptions contain specified filter. Use '|' as delimiter for multiple strings.
 
  ![SD06](https://user-images.githubusercontent.com/32285008/122496003-a1ac8880-d01d-11eb-80be-ba1ca557b5e7.gif)
 
 
 6.	The tool also supports to set memory address of breakpoint to generate dump files.
+
     You can capture a dump first and then open it in debugger to find the code entry address of a function you interest in(or code address of any line).
     Then use -a option of SmartDump to set the address as breakpoint for capture:
 
