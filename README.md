@@ -12,7 +12,7 @@ Bug reports, suggestions and feedback from you will be very much appreciated.
 
 # Usage:
 
-SmartDump v1.01 x86/x64 beta - exception and memory dump capture utility
+SmartDump v1.02 x86/x64 beta - exception and memory dump capture utility
 
 **Options:**
 
@@ -110,6 +110,7 @@ Below is a detailed step-to-step demo.
 
 ![SD02](https://user-images.githubusercontent.com/32285008/122495932-7e81d900-d01d-11eb-8bda-68c05beadb8f.gif)
 
+
 3.	Then we can run SmartDump.exe and use -p option to specify the PID found in step #2.
     This makes SmartDump attach to the target process and start to monitor any exception thrown in it. By default, the tool captures 5 exceptions.
 
@@ -119,6 +120,7 @@ Below is a detailed step-to-step demo.
 
  ![SD04](https://user-images.githubusercontent.com/32285008/122495968-8e99b880-d01d-11eb-8758-6fbcc3a0b7e3.gif)
 
+
 4.	If you want to see more exceptions, just use -n option to specify number of exceptions to be captured.
     NOTE: using -n 0 to start an unlimited/endless capture. However please be careful to use this in Kudu because it doesn’t support Ctrl+C to exit a process. Run inside a common cmd.exe without such issue.
 
@@ -126,12 +128,14 @@ Below is a detailed step-to-step demo.
 
  ![SD05](https://user-images.githubusercontent.com/32285008/122495986-98bbb700-d01d-11eb-93d7-e2b65da75b0d.gif)
 
+
 5.	To generate dump, use -d option to set number of dumps to be captured. Associating it with -f(filter include) and -fv (filter exclude) options allow you to capture dumps against specific exceptions.
 
 - -f      Filter exception based on specified string(s). Use '|' as delimiter for multiple strings.
 - -fv     Exclude exceptions contain specified filter. Use '|' as delimiter for multiple strings.
 
  ![SD06](https://user-images.githubusercontent.com/32285008/122496003-a1ac8880-d01d-11eb-80be-ba1ca557b5e7.gif)
+
 
 6.	The tool also supports to set memory address of breakpoint to generate dump files.
     You can capture a dump first and then open it in debugger to find the code entry address of a function you interest in(or code address of any line).
