@@ -82,6 +82,8 @@ SmartDump v1.02 x86/x64 beta - exception and memory dump capture utility
     -ma     Manual full memory dump.
  
     -d      Collect number of dumps.
+    
+    -de	    Collect number of dumps in 'Dump for each' mode. Dumps will be captured for each of different exception types.
  
     -n      Number of exceptions to be captured. Default is 5. Set to 0 means unlimited.
     
@@ -149,12 +151,16 @@ The following are several sample commands that uses the tool with Kudu debug con
 
 ![image](https://user-images.githubusercontent.com/32285008/122184337-b32b4e80-cebe-11eb-88f5-cf91a546e8c5.png)
 
-8) Use SmartDump to write a log of exceptions for your site.
+8) Use -de 'Dump for each' option to capture dumps for 3 different exception types: SqlException, InvalidOperationException and ServiceOperationsProviderException.
+
+![image](https://user-images.githubusercontent.com/32285008/122683703-89ae5200-d233-11eb-8d6d-5676ef170f83.png)
+
+9) Use SmartDump to write a log of exceptions for your site.
 
 ![image](https://user-images.githubusercontent.com/32285008/122149025-fd480c00-ce8d-11eb-8ae9-650f4367ecf3.png)
 ![image](https://user-images.githubusercontent.com/32285008/122149126-28326000-ce8e-11eb-9b6a-cee89a2d77bd.png)
 
-9) Capture against process of onpromise environment
+10) Capture against process of onpromise environment
 
 ![image](https://user-images.githubusercontent.com/32285008/121570281-4f36ff00-ca54-11eb-8089-df7fb2e14924.png)
 
