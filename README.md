@@ -73,7 +73,7 @@ Below is a detailed step-to-step demo.
 
 # Usage:
 
-SmartDump v1.02 x86/x64 beta - exception and memory dump capture utility
+SmartDump v1.03 x86/x64 beta - exception and memory dump capture utility
 
 **Options:**
 
@@ -83,7 +83,7 @@ SmartDump v1.02 x86/x64 beta - exception and memory dump capture utility
  
     -d      Collect number of dumps.
     
-    -de	    Collect number of dumps in 'Dump for each' mode. Dumps will be captured for each of different exception types.
+    -de	   Collect number of dumps in 'Dump for each' mode. Dumps will be captured for each of different exception types.
  
     -n      Number of exceptions to be captured. Default is 5. Set to 0 means unlimited.
     
