@@ -21,7 +21,7 @@ Below is a detailed step-to-step demo.
 
 
 
-2.	Next, we need to find the PID of our LogicApp site’s w3wp.exe from Process Explorer. 
+2.	Next, we need to find the PID of our site’s w3wp.exe from Process Explorer. 
     
     NOTE: the one with (scm) is for Kudu console. Hence we always have to focus on w3wp.exe without (scm).
 
@@ -35,7 +35,7 @@ Below is a detailed step-to-step demo.
 
  ![SD03](https://user-images.githubusercontent.com/32285008/122495954-893c6e00-d01d-11eb-8701-4c90cb879242.gif)
 
-   After invoke LogicApp and generate some exceptions, SmartDump will be able to capture them within the console.
+   After submitting requests to generate some exceptions, SmartDump will be able to capture them within the console.
 
  ![SD04](https://user-images.githubusercontent.com/32285008/122495968-8e99b880-d01d-11eb-8758-6fbcc3a0b7e3.gif)
 
