@@ -73,7 +73,7 @@ Below is a detailed step-to-step demo.
 
 # Usage:
 
-SmartDump v1.03 x86/x64 beta - exception and memory dump capture utility
+SmartDump x86/x64 - exception and memory dump capture utility
 
 **Options:**
 
