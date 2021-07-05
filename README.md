@@ -77,27 +77,29 @@ SmartDump x86/x64 - exception and memory dump capture utility
 
 **Options:**
 
-    -p      PID of target process.
- 
-    -ma     Manual full memory dump.
- 
-    -d      Collect number of dumps.
+    -p     PID of target process.
     
-    -de     Collect number of dumps in 'Dump for each' mode. Dumps will be captured for each of different exception types.
- 
-    -n      Number of exceptions to be captured. Default is 5. Set to 0 means unlimited.
+    -n     Number of exceptions to be captured. Default is 5. Set to 0 means unlimited.
     
-    -s      Skip the first number of exceptions for dump capture. This option is useful when initial exceptions cannot reflect an actual issue.
- 
-    -f      Filter(include) exception based on specified string(s). Use '|' as delimiter for multiple strings.
- 
-    -fv     Exclude exceptions contain specified filter. Use '|' as delimiter for multiple strings.
- 
-    -a      Address of breakpoint.
- 
-    -o      Output path of dump(s).
- 
-    -h      Or -?/-help. Display usage and examples.
+    -d     Collect number of dumps.
+    
+    -de    Collect number of dumps in 'Dump for each' mode. Dumps will be captured for each of different exception types.
+    
+    -f     Filter(include) exception based on specified string(s). Use '|' as delimiter for multiple strings.
+    
+    -fv    Exclude exceptions contain specified filter. Use '|' as delimiter for multiple strings.
+    
+    -s     Skip the first number of exceptions for dump capture. This option is useful when initial exceptions cannot reflect an actual issue.
+    
+    -ma    Capture a manual dump.
+    
+    -mn    Option to captue a mini dump. Default setting is to capture full memory dumps.
+    
+    -a     Address of breakpoint.
+    
+    -o     Output path of dump(s).
+    
+    -h     Or -?/-help. Display usage and examples.
 
 
 Examples:
