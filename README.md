@@ -89,7 +89,7 @@ SmartDump x86/x64 - exception and memory dump capture utility
     
     -fv    Exclude exceptions contain specified filter. Use '|' as delimiter for multiple strings.
     
-    -s     Skip the first number of exceptions for dump capture. This option is useful when initial exceptions cannot reflect an actual issue.
+    -s     Skip the first number of exceptions for dump capture. 
     
     -ma    Capture a manual dump.
     
@@ -119,6 +119,9 @@ Examples:
                 
         - Skip the first 3 NullReferenceException. Capture a memory dump for the 4th one and specify output path to: c:\home\dump.
                 SmartDump.exe -p 4567 -n 10 -f "NullReferenceException" -s 3 -d 1 -o c:\home\dump
+                
+        - Capture 3 mini dumps for each of the exception types: NullReferenceException, SocketException and ArgumentException
+                SmartDump.exe -p 4567 -n 10 -de 3 -mn -f "NullReferenceException|SocketException|ArgumentException"                
 
         - Capture a dump based on specified address of breakpoint:
                 SmartDump.exe -d 1 -p 4567 -a 7a64e9d0 -n 1
