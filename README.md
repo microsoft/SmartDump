@@ -163,9 +163,9 @@ The following are several sample commands that uses the tool with Kudu debug con
 ![image](https://user-images.githubusercontent.com/32285008/122184337-b32b4e80-cebe-11eb-88f5-cf91a546e8c5.png)
 
 
-8) Use -de 'Dump for each' option to capture dumps for 3 different exception types: SqlException, InvalidOperationException and ServiceOperationsProviderException.
+8) Use -de 'Dump for each' option to capture 3 mini dump files for 3 specified exception types: InvalidOperationException, SqlException and ServiceOperationsProviderException.
 
-![image](https://user-images.githubusercontent.com/32285008/122683703-89ae5200-d233-11eb-8d6d-5676ef170f83.png)
+![image](https://user-images.githubusercontent.com/32285008/124462318-2dffcf00-ddc4-11eb-98e8-397f4be01ae1.png)
 
 
 9) Use SmartDump to write a log of exceptions for your site.
