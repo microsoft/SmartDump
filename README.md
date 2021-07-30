@@ -95,6 +95,8 @@ SmartDump x86/x64 - exception and memory dump capture utility
     
     -mn    Option to captue a mini dump. Default setting is to capture full memory dumps.
     
+    -v     Enable verbose output to list frames of managed callstack like code entry address of each call which can be used to set breakpoint with -a option.
+    
     -a     Address of breakpoint.
     
     -o     Output path of dump(s).
@@ -122,6 +124,9 @@ Examples:
                 
         - Capture 3 mini dumps for each of the exception types: NullReferenceException, SocketException and ArgumentException
                 SmartDump.exe -p 4567 -n 10 -de 3 -mn -f "NullReferenceException|SocketException|ArgumentException"                
+
+        - Display verbose output to list frames of managed callstack. Use code entry address to set breakpoint with -a option to dump an interested call.
+                SmartDump.exe -p 4567 -n 20 -v
 
         - Capture a dump based on specified address of breakpoint:
                 SmartDump.exe -d 1 -p 4567 -a 7a64e9d0 -n 1
