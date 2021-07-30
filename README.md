@@ -158,7 +158,6 @@ The following are several sample commands that uses the tool with Kudu debug con
 
 ![image](https://user-images.githubusercontent.com/32285008/121568609-7391dc00-ca52-11eb-83d6-696c973e4a06.png)
 
-
 6) Collect dump based on specified address of breakpoint.
 
 ![image](https://user-images.githubusercontent.com/32285008/122042223-769f1a80-ce0c-11eb-9529-8c5ca17c6b02.png)
@@ -184,6 +183,22 @@ The following are several sample commands that uses the tool with Kudu debug con
 
 ![image](https://user-images.githubusercontent.com/32285008/121570281-4f36ff00-ca54-11eb-8089-df7fb2e14924.png)
 
+11) Display verbose output to list frames of managed callstack. Then we can utilize addresses from its output to set breakpoint with -a option.  
+    For example, a code entry address of a function can be used to dump its corresponding interested call:
+
+                SmartDump.exe -p 4567 -n 20 -v
+
+The frame output indicates the entry code address of the first managed call that threw the exception is 0x00007ffd`551f0eb0.
+
+![image](https://user-images.githubusercontent.com/32285008/127641176-398496c7-d0c3-476b-8c32-9fd9ef1ce2b7.png)
+
+So we use address: 00007ffd`551f0eb0 as breakpoint to capture dump with -a option:
+
+![image](https://user-images.githubusercontent.com/32285008/127641192-1cd3deb0-5372-4327-8d47-57fd4322e4be.png)
+
+As we can see, 00007ffd`551f0eb0 is just the entry address of function: System.Data.SqlClient.SqlConnection.OnError
+
+![image](https://user-images.githubusercontent.com/32285008/127642176-79245fbc-5fa9-4ffd-8d2f-af553567db82.png)
 
 # Project
 
