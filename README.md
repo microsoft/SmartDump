@@ -125,7 +125,8 @@ Examples:
         - Capture 3 mini dumps for each of the exception types: NullReferenceException, SocketException and ArgumentException
                 SmartDump.exe -p 4567 -n 10 -de 3 -mn -f "NullReferenceException|SocketException|ArgumentException"                
 
-        - Display verbose output to list frames of managed callstack. Use code entry address to set breakpoint with -a option to dump an interested call.
+        - Display verbose output to list frames of managed callstack. 
+            After that, we can use code entry address to set breakpoint with -a option to dump an interested call.
                 SmartDump.exe -p 4567 -n 20 -v
 
         - Capture a dump based on specified address of breakpoint:
