@@ -125,8 +125,8 @@ Examples:
         - Capture 3 mini dumps for each of the exception types: NullReferenceException, SocketException and ArgumentException
                 SmartDump.exe -p 4567 -n 10 -de 3 -mn -f "NullReferenceException|SocketException|ArgumentException"                
 
-        - Display verbose output to list frames of managed callstack. 
-            After that, we can use code entry address to set breakpoint with -a option to dump an interested call.
+        - Display verbose output to list managed callstacks. 
+            After that, we can use function name as filter to capture dumps or utilize function entry address to set breakpoint with -a option to dump an interested call.
                 SmartDump.exe -p 4567 -n 20 -v
 
         - Capture a dump based on specified address of breakpoint:
@@ -183,11 +183,14 @@ The following are several sample commands that uses the tool with Kudu debug con
 
 ![image](https://user-images.githubusercontent.com/32285008/121570281-4f36ff00-ca54-11eb-8089-df7fb2e14924.png)
 
-11) Display verbose output to list frames of managed callstack. Then we can utilize addresses from its output to set breakpoint with -a option.  
-    For example, a code entry address of a function can be used to dump its corresponding interested call:
+11) Verbose(-v) option can real-time display manage callstack when a .net exception is thrown. Moreover using function name as filter to capture memory dump is supported in this build.
+(NOTE: this feature is only available on 32bit version currently and hasn't been added into 64bit version.
 
                 SmartDump.exe -p 4567 -n 20 -v
 
+![SD09](https://user-images.githubusercontent.com/32285008/134506066-196c33c0-782f-42da-bf6b-d84ea75b0bbf.gif)
+
+Also a function entry address of a function can be used to dump its corresponding interested call. 
 The frame output indicates the entry code address of the first managed call that threw the exception is 0x00007ffd`551f0eb0.
 
 ![image](https://user-images.githubusercontent.com/32285008/127641176-398496c7-d0c3-476b-8c32-9fd9ef1ce2b7.png)
