@@ -11,6 +11,15 @@ Currently SmartDump is still under development. New features are continuously be
 Bug reports, suggestions and feedback from you will be very much appreciated.
 
 
+# New feature:
+
+Now -v option can real-time display manage callstack when a .net exception is thrown. Moreover using function name as filter to capture memory dump is supported.
+
+(NOTE: this feature is only available on 32bit version currently and hasn't been added into 64bit version.
+
+![SD09](https://user-images.githubusercontent.com/32285008/134506066-196c33c0-782f-42da-bf6b-d84ea75b0bbf.gif)
+
+
 # How to Use:
 
 Below is a detailed step-to-step demo.
