@@ -112,6 +112,8 @@ SmartDump x86/x64 - exception and memory dump capture utility
     
     -o     Output path of dump(s).
     
+    -exit  Dettach and exit a SmartDump instance with pid specified with -p .
+    
     -h     Or -?/-help. Display usage and examples.
 
 
