@@ -13,7 +13,7 @@ Bug reports, suggestions and feedback from you will be very much appreciated.
 
 # New feature:
 
-**Support of .Net 6 has been added in the latest release 1.12.**
+**Support of .Net 6 has been added in release 1.12.**
 
 Now -v option can real-time display manage callstack when a .net exception is thrown. Moreover using function name as filter to capture memory dump is supported.
 
