@@ -106,7 +106,7 @@ SmartDump x86/x64 - exception and memory dump capture utility
     
     -mn    Option to captue a mini dump. Default setting is to capture full memory dumps.
     
-    -v     Enable verbose output to list managed callstacks and function entry addresses can be utilized to set breakpoints with -a option.
+    -v     Enable verbose output to list managed callstacks and function entry addresses that can be utilized to set breakpoints with -a option.
     
     -a     Dump with address of breakpoint.
     
