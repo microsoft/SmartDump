@@ -13,6 +13,19 @@ Bug reports, suggestions and feedback from you will be very much appreciated.
 
 # New feature:
 
+**release 1.13.**
+
+Support new argument: 
+    -exit  Dettach and exit a SmartDump instance with pid specified with -p .
+
+This is useful in situations that Ctrl-C or Ctrl-Break doesn't work. Another way is to create a **config.ini** file in the same path of SmartDump.exe. Create a [Runtime] section and set Exit = 1, i.e:
+```
+  [Runtime]
+  Exit=1
+```
+
+This way works well in more specific cases like Kudu console. 
+
 **Support of .Net 6 has been added in release 1.12.**
 
 Now -v option can real-time display manage callstack when a .net exception is thrown. Moreover using function name as filter to capture memory dump is supported.
