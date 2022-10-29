@@ -13,7 +13,7 @@ Bug reports, suggestions and feedback from you will be very much appreciated.
 
 # New feature:
 
-**release 1.13.**
+**New feature in release 1.13.**
 
 Support new argument: 
     -exit  Dettach and exit a SmartDump instance with pid specified with -p .
